@@ -7,7 +7,6 @@ import BoatDetailsInfo from "./BoatDetailsInfo";
 import ContactForm from "./ContactForm";
 import FaqSection from "./FaqSection";
 import Navbar from "./Navbar";
-import ChatWidget from "./ChatWidget";
 import LandingPage from "./LandingPage";
 import BoatingHome from "./BoatingHome";
 import { LanguageProvider } from "./LanguageContext";
@@ -29,7 +28,6 @@ function App() {
                 <BoatDetailsInfo />
                 <ContactForm />
                 <FaqSection />
-                <ChatWidget />
               </LayoutWrapper>
             }
           />
