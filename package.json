@@ -27,6 +27,6 @@
     "yet-another-react-lightbox": "^3.22.0"
   },
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   }
 }
