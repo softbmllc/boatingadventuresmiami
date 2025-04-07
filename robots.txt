@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://boatingadventuresmiami.com/sitemap.xml
