@@ -43,4 +43,5 @@ function App() {
   );
 }
 
+// Cambio mínimo para forzar deploy
 export default App;
