@@ -9,7 +9,7 @@ export default function Hero() {
     <section
       id="hero"
       className="relative bg-cover bg-center bg-no-repeat text-white text-center px-6 sm:px-10 pb-28"
-      style={{ backgroundImage: "url('/Fondo-nuevo.jpg')" }}
+      style={{ backgroundImage: "url('/bg-hero-v4.jpg')" }}
     >
       <div className="pt-40 sm:pt-32"> {/* Aumentamos espacio en mobile */}
         <h1 className="text-4xl sm:text-5xl font-extrabold drop-shadow-md tracking-tight mb-6 leading-tight">

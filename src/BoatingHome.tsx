@@ -1,4 +1,4 @@
-import fondo from "/Fondo.jpg";
+import fondo from "/bg-hero-v4.jpg";
 import { useLanguage } from "./LanguageContext";
 import translations from "./translations";
 import { motion } from "framer-motion";
