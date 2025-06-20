@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { sendMessageToGPT } from "./chatService";
+// import { sendMessageToGPT } from "./chatService"; // Desactivado porque falta el archivo
 import { FaPaperPlane } from "react-icons/fa"; // Ícono de avión de papel
 
 interface ChatMessage {
@@ -21,7 +21,7 @@ export default function ChatWidget() {
     setInput("");
     setLoading(true);
 
-    const assistantReply = await sendMessageToGPT(input);
+    const assistantReply = "Hola, esto es una respuesta simulada (GPT no disponible ahora).";
     const assistantMessage: ChatMessage = {
       role: "assistant",
       content: assistantReply,
