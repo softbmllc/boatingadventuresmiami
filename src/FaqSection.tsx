@@ -22,7 +22,7 @@ export default function FaqSection() {
       <div className="max-w-4xl mx-auto">
         <h2
           id="faq-title"
-          className="text-4xl sm:text-5xl font-extrabold text-center mb-14 text-gray-800 drop-shadow-md tracking-tight uppercase"
+          className="text-3xl sm:text-4xl font-bold text-center mb-10 text-blue-900"
         >
           {t.title}
         </h2>

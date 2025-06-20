@@ -10,7 +10,7 @@ export default function BoatServiceInfo() {
   return (
     <section id="boats" className="bg-white py-20 px-6 text-gray-800 scroll-mt-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800 text-center mb-14 drop-shadow-md tracking-tight uppercase">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-blue-900">
           {t.title ? t.title : "Title not available"}
         </h2>
 
