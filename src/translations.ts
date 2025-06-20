@@ -1,4 +1,5 @@
 import { Translations, LanguageKeys } from "./types";
+
 const translations: Record<LanguageKeys, Translations> = {
   es: {
     landing: {
@@ -9,53 +10,60 @@ const translations: Record<LanguageKeys, Translations> = {
       ctaButton: "Escribinos por WhatsApp",
       seo: {
         title: "Paseos en barco en Miami | Boating Adventures",
-        description: "Reservá tu paseo privado en barco por Miami. Atardeceres, deportes acuáticos y diversión en el sandbar.",
-        keywords: "miami, barco, alquiler, lancha, paseo, privado, sandbar"
-      }
+        description:
+          "Reservá tu paseo privado en barco por Miami. Atardeceres, deportes acuáticos y diversión en el sandbar.",
+        keywords: "miami, barco, alquiler, lancha, paseo, privado, sandbar",
+      },
     },
     nav: {
       home: "Inicio",
       tours: "Experiencias",
       boats: "Nuestros Botes",
-      gallery: "Galeria",
+      gallery: "Galería",
       details: "Servicios",
       contact: "Contacto",
       faq: "FAQ",
     },
     home: {
       title: "Explorá Miami desde el agua como nunca antes",
-      subtitle: "Disfrutá de Miami desde el agua con paseos privados, deportes acuáticos y puestas de sol en entornos únicos.",
+      subtitle:
+        "Disfrutá de Miami desde el agua con paseos privados, deportes acuáticos y puestas de sol en entornos únicos.",
       button: "Reservar",
     },
     hero: {
       title: "Explorá Miami desde el agua como nunca antes",
-      subtitle: "Alquiler de botes privados para grupos. Atardeceres, deportes acuáticos y experiencias únicas en el Sandbar.",
+      subtitle:
+        "Alquiler de botes privados para grupos. Atardeceres, deportes acuáticos y experiencias únicas en el Sandbar.",
       button: "Reservar",
     },
     tourTypes: {
       title: "Elige tu experiencia ideal en el agua",
       card1: {
         title: "Sandbar & Fiesta",
-        description: "Sol, música y buena onda en Miami. Ideal para grupos que buscan diversión asegurada.",
+        description:
+          "Sol, música y buena onda en Miami. Ideal para grupos que buscan diversión asegurada.",
       },
       card2: {
         title: "Atardecer Relax",
-        description: "Un paseo relajado al atardecer, perfecto para disfrutar en pareja o con amigos. Champagne opcional.",
+        description:
+          "Un paseo relajado al atardecer, perfecto para disfrutar en pareja o con amigos. Champagne opcional.",
       },
       card3: {
         title: "Deportes Acuáticos",
-        description: "Wakeboard, donut y otras aventuras para los que buscan adrenalina.",
+        description:
+          "Wakeboard, donut y otras aventuras para los que buscan adrenalina.",
       },
       seo: {
         title: "Tipos de paseo en barco en Miami | Boating Adventures",
-        description: "Descubrí nuestros paseos: fiesta en el sandbar, atardecer romántico o deportes acuáticos. El plan perfecto en barco te espera en Miami.",
-        keywords: "fiesta en barco, paseo al atardecer, deportes acuáticos, sandbar, miami, barco privado"
-      }
+        description:
+          "Descubrí nuestros paseos: fiesta en el sandbar, atardecer romántico o deportes acuáticos. El plan perfecto en barco te espera en Miami.",
+        keywords:
+          "fiesta en barco, paseo al atardecer, deportes acuáticos, sandbar, miami, barco privado",
+      },
     },
     details: {
       includesTitle: "¿Qué incluye cada paseo?",
       titleIncludes: "Todo lo que está incluido en tu paseo",
-      // Asegurado: titleIncludes presente
       includes: {
         fridge: "Heladera",
         ice: "Hielo",
@@ -69,7 +77,6 @@ const translations: Record<LanguageKeys, Translations> = {
       },
       policiesTitle: "Políticas",
       titlePolicies: "Políticas simples y claras",
-      // Asegurado: titlePolicies presente
       policies: {
         weather: "Reprogramación por mal tiempo",
         substances: "No se permiten sustancias ilegales",
@@ -79,9 +86,11 @@ const translations: Record<LanguageKeys, Translations> = {
       },
       seo: {
         title: "¿Qué incluye cada paseo? | Boating Adventures Miami",
-        description: "Descubrí todo lo que está incluido en nuestros paseos en barco por Miami. Desde música con Bluetooth hasta limpieza posterior, te contamos cada detalle.",
-        keywords: "qué incluye, paseo en barco, servicios, música, hielo, limpieza, seguridad, miami"
-      }
+        description:
+          "Descubrí todo lo que está incluido en nuestros paseos en barco por Miami. Desde música con Bluetooth hasta limpieza posterior, te contamos cada detalle.",
+        keywords:
+          "qué incluye, paseo en barco, servicios, música, hielo, limpieza, seguridad, miami",
+      },
     },
     contact: {
       title: "¿Querés reservar o tenés dudas? Escribinos",
@@ -102,9 +111,11 @@ const translations: Record<LanguageKeys, Translations> = {
       },
       seo: {
         title: "Contacto | Boating Adventures Miami",
-        description: "¿Querés reservar o tenés dudas? Escribinos por WhatsApp o completá el formulario. Estamos disponibles 24/7 para ayudarte.",
-        keywords: "contacto, whatsapp, reservas, paseo en barco, miami, formulario, atención al cliente"
-      }
+        description:
+          "¿Querés reservar o tenés dudas? Escribinos por WhatsApp o completá el formulario. Estamos disponibles 24/7 para ayudarte.",
+        keywords:
+          "contacto, whatsapp, reservas, paseo en barco, miami, formulario, atención al cliente",
+      },
     },
     gallery: {
       title: "Descubrí cada detalle en fotos reales",
@@ -113,34 +124,40 @@ const translations: Record<LanguageKeys, Translations> = {
       yamaha: "Yamaha AR195",
       seo: {
         title: "Galería de fotos de paseos en barco por Miami | Boating Adventures",
-        description: "Explorá imágenes reales de nuestros paseos en barco por Miami. Conocé el Meridian 42', Sundancer 36' y Yamaha AR195 en acción.",
-        keywords: "galería, fotos, barco, miami, meridian, sundancer, yamaha, paseo en barco"
-      }
+        description:
+          "Explorá imágenes reales de nuestros paseos en barco por Miami. Conocé el Meridian 42', Sundancer 36' y Yamaha AR195 en acción.",
+        keywords:
+          "galería, fotos, barco, miami, meridian, sundancer, yamaha, paseo en barco",
+      },
     },
     boatServices: {
       title: "Tu bote ideal te espera",
       seo: {
         title: "Nuestros botes en Miami | Boating Adventures",
-        description: "Conocé los botes disponibles para tus paseos por Miami. Capacidad, precios y servicios de cada uno: Meridian, Sundancer y Yamaha Sport.",
-        keywords: "botes, barcos, alquiler, miami, meridian, sundancer, yamaha, lancha"
+        description:
+          "Conocé los botes disponibles para tus paseos por Miami. Capacidad, precios y servicios de cada uno: Meridian, Sundancer y Yamaha Sport.",
+        keywords:
+          "botes, barcos, alquiler, miami, meridian, sundancer, yamaha, lancha",
       },
       meridian: {
         title: "Meridian 42'",
         subtitle: "Hasta 13 personas",
-        description: "Opción premium para celebraciones. Brickell, Venetian Islands, Key Biscayne.",
+        description:
+          "Opción premium para celebraciones. Brickell, Venetian Islands, Key Biscayne.",
         prices: {
           label: "Precios:",
-          list: ["2h $800", "4h $1300", "5h $1400", "6h $1500", "7h $1700", "8h $1900"]
-        }
+          list: ["2h $800", "4h $1300", "5h $1400", "6h $1500", "7h $1700", "8h $1900"],
+        },
       },
       sundancer: {
         title: "Sundancer 36'",
         subtitle: "Hasta 13 personas",
-        description: "Ideal para eventos, cumpleaños y grupos grandes. Key Biscayne, Monument Island, Brickell.",
+        description:
+          "Ideal para eventos, cumpleaños y grupos grandes. Key Biscayne, Monument Island, Brickell.",
         prices: {
           label: "Precios:",
-          list: ["2h $500", "4h $800", "5h $900", "6h $1000", "7h $1100", "8h $1300"]
-        }
+          list: ["2h $500", "4h $800", "5h $900", "6h $1000", "7h $1100", "8h $1300"],
+        },
       },
       yamaha: {
         title: "Yamaha Sport 20'",
@@ -148,6 +165,7 @@ const translations: Record<LanguageKeys, Translations> = {
         description: "Ideal para deportes acuáticos y sandbar. Incluye donut, kneeboard, música y más.",
         prices: {
           label: "Precios:",
+
           list: ["4h $450", "6h $600"]
         }
       }
@@ -220,6 +238,7 @@ const translations: Record<LanguageKeys, Translations> = {
       title: "Explore Miami from the water like never before",
       subtitle: "Enjoy Miami from the water with private boat rides, water sports, and sunsets in unique surroundings.",
       button: "Book Now",
+
     },
     hero: {
       title: "Explore Miami from the water like never before",
@@ -400,6 +419,7 @@ const translations: Record<LanguageKeys, Translations> = {
         keywords: "miami, barco, aluguel, lancha, passeio, privado, sandbar"
       }
     },
+
     nav: {
       home: "Início",
       tours: "Experiências",

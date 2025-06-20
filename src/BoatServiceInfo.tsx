@@ -8,14 +8,10 @@ export default function BoatServiceInfo() {
   const t = translations[language].boatServices;
 
   return (
-    <section
-      id="boats"
-      aria-label={t.title}
-      className="bg-white py-20 px-6 text-gray-800 scroll-mt-20"
-    >
+    <section id="boats" className="bg-white py-20 px-6 text-gray-800 scroll-mt-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-blue-900">
-          {t.title}
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800 text-center mb-14 drop-shadow-md tracking-tight uppercase">
+          {t.title ? t.title : "Title not available"}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -6,6 +6,7 @@ import { Sailboat, PartyPopper, Waves } from "lucide-react";
 export default function LandingPage() {
   const { language } = useLanguage();
   const t = translations[language];
+
   const whatsappLink = "https://wa.me/17544653318";
 
   const boats = [

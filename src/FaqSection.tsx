@@ -22,7 +22,7 @@ export default function FaqSection() {
       <div className="max-w-4xl mx-auto">
         <h2
           id="faq-title"
-          className="text-3xl sm:text-4xl font-bold text-center mb-10 text-blue-900"
+          className="text-4xl sm:text-5xl font-extrabold text-center mb-14 text-gray-800 drop-shadow-md tracking-tight uppercase"
         >
           {t.title}
         </h2>
@@ -44,24 +44,24 @@ export default function FaqSection() {
                   aria-expanded={isOpen}
                   aria-controls={answerId}
                   aria-labelledby={questionId}
+                  role="button"
                 >
                   <h3 id={questionId}>{q.question}</h3>
                   <ChevronDown
                     className={`w-5 h-5 transition-transform duration-300 ${
                       isOpen ? "rotate-180 text-blue-600" : "rotate-0"
                     }`}
-                    aria-hidden="true"
                   />
                 </button>
                 {isOpen && (
-                  <div
+                  <p
                     id={answerId}
                     role="region"
                     aria-labelledby={questionId}
                     className="mt-4 text-gray-600 text-base leading-relaxed"
                   >
-                    <p>{q.answer}</p>
-                  </div>
+                    {q.answer}
+                  </p>
                 )}
               </article>
             );

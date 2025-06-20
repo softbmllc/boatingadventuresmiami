@@ -17,8 +17,6 @@ export default function InfoCard({
   prices = [],
   onClick,
 }: InfoCardProps) {
-  if (!title || !description) return null;
-
   return (
     <motion.div
       onClick={onClick}

@@ -9,13 +9,13 @@ import FaqSection from "./FaqSection";
 import Navbar from "./Components/Navbar";
 import LandingPage from "./LandingPage";
 import BoatingHome from "./BoatingHome";
-import Footer from "./Components/Footer"; // ✅ Importamos el Footer
+import Footer from "./Components/Footer";
 import { LanguageProvider } from "./LanguageContext";
-import { HelmetProvider } from "react-helmet-async"; // ✅ IMPORTANTE
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <HelmetProvider> {/* ✅ Necesario para SeoHead */}
+    <HelmetProvider>
       <LanguageProvider>
         <Router>
           <Routes>
@@ -31,7 +31,7 @@ function App() {
                   <BoatDetailsInfo />
                   <ContactForm />
                   <FaqSection />
-                  <Footer /> {/* ✅ Footer agregado al final */}
+                  <Footer />
                 </LayoutWrapper>
               }
             />
