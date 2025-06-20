@@ -46,4 +46,5 @@ function App() {
 // Cambio mínimo para forzar deploy
 console.log("Despliegue limpio forzado");
 console.log("Deploy correcto");
+console.log("Forzando nuevo deploy desde App.tsx - intento 2");
 export default App;
