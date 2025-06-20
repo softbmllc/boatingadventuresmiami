@@ -44,4 +44,5 @@ function App() {
 }
 
 // Cambio mínimo para forzar deploy
+console.log("Deploy correcto");
 export default App;
