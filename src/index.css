@@ -1,0 +1,25 @@
+@import 'yet-another-react-lightbox/styles.css';
+@import 'yet-another-react-lightbox/plugins/thumbnails.css';
+@import 'yet-another-react-lightbox/plugins/captions.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🟢 Scroll suave global */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ✅ Centrado forzado del caption en el lightbox */
+.yarl__slide_title,
+.yarl__slide_description {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  font-size: 1rem;
+  color: white;
+  font-family: inherit;
+  padding-top: 0.5rem;
+}
