@@ -91,9 +91,9 @@ export default function BoatingHome() {
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="flex flex-col sm:flex-row gap-6 justify-center flex-wrap">
           {[
-            "https://res.cloudinary.com/ddkyumyw3/video/upload/v1748555344/AQNqYQMBAg8SC29O_M5dpX7y5DCjl-3vv25PGmJkd6pIzBtApZLvyL2fRjr0NAalnHDkiOo_XoTcvEY8wtCRE6F48nZWgo2lgkeD9b8_d4qear.mov",
-            "https://res.cloudinary.com/ddkyumyw3/video/upload/v1748551026/AQOn7_UzochxYh58vRUbmBGsNgKDvxwEW5rA2i7Xdf2dGlIP8CGPniPhEFlyznATTu0s58s6MogQWUlL6s13O5HM7C_v9yhoJ_7cP1I_euojm4.mp4",
-            "https://res.cloudinary.com/ddkyumyw3/video/upload/v1748556378/IMG_5364_v1uwhx.mov"
+            "/videos/Video1.mov",
+            "/videos/Video2.mp4",
+            "/videos/Video3.MOV"
           ].map((src, index) => (
             <div
               key={index}

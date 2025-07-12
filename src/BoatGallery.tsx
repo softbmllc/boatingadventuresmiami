@@ -30,6 +30,8 @@ const boats: {
       { src: "/meridian-42ft-boat-charter-miami-4.jpg", alt: "Spacious 42ft Meridian boat in Miami - Lounge area" },
       { src: "/meridian-42ft-boat-charter-miami-5.jpg", alt: "Premium Meridian yacht rental Miami - View from bow" },
       { src: "/meridian-42ft-boat-charter-miami-6.jpg", alt: "42ft Meridian boat in Miami - Ready for charter" },
+      { src: "/meridian-42ft-boat-charter-miami-7.jpg", alt: "Meridian 42ft Miami yacht - Sunset moment" },
+      { src: "/meridian-42ft-boat-charter-miami-8.jpg", alt: "Luxury Meridian 42ft yacht rental - Night lights in Miami" },
     ],
   },
   {
@@ -58,6 +60,8 @@ const boats: {
       { src: "/yamaha-sport-boat-miami-4.jpg", alt: "Yamaha sport boat in Miami - Bluetooth music onboard" },
       { src: "/yamaha-sport-boat-miami-5.jpg", alt: "Miami sandbar adventure - Yamaha 20ft boat rental" },
       { src: "/yamaha-sport-boat-miami-6.jpg", alt: "Yamaha boat tour Miami - Ideal for watersports and fun" },
+      { src: "/yamaha-sport-boat-miami-7.jpg", alt: "Yamaha 20ft sport boat in Miami - Docked at sunset" },
+      { src: "/yamaha-sport-boat-miami-8.jpg", alt: "Yamaha sport boat rental in Miami - Evening lights" },
     ],
   },
 ];
@@ -95,7 +99,12 @@ export default function BoatGallery() {
       </h2>
 
       <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-        {language === "es" && "Explorá nuestros botes en detalle. Fotos reales de cada modelo para ayudarte a elegir tu paseo ideal por Miami."}
+        {language === "es" && (
+          <>
+            Explorá nuestros botes en detalle. <br />
+            Fotos reales de cada modelo para ayudarte a elegir tu paseo ideal por Miami.
+          </>
+        )}
         {language === "en" && "Browse our boats in detail. Real photos of each model to help you choose your ideal Miami boat tour."}
         {language === "pt" && "Explore nossos barcos em detalhes. Fotos reais de cada modelo para ajudar você a escolher o passeio ideal por Miami."}
       </p>
