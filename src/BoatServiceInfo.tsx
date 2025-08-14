@@ -22,6 +22,7 @@ export default function BoatServiceInfo() {
             subtitle={t.meridian.subtitle}
             description={t.meridian.description}
             prices={t.meridian.prices.list}
+            pricesOrientation="column"
             onClick={() => {
               const section = document.getElementById("meridian");
               if (section) section.scrollIntoView({ behavior: "smooth" });
@@ -35,6 +36,7 @@ export default function BoatServiceInfo() {
             subtitle={t.sundancer.subtitle}
             description={t.sundancer.description}
             prices={t.sundancer.prices.list}
+            pricesOrientation="column"
             onClick={() => {
               const section = document.getElementById("sundancer");
               if (section) section.scrollIntoView({ behavior: "smooth" });
@@ -48,6 +50,7 @@ export default function BoatServiceInfo() {
             subtitle={t.yamaha.subtitle}
             description={t.yamaha.description}
             prices={t.yamaha.prices.list}
+            pricesOrientation="column"
             onClick={() => {
               const section = document.getElementById("yamaha");
               if (section) section.scrollIntoView({ behavior: "smooth" });

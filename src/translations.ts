@@ -82,7 +82,6 @@ const translations: Record<LanguageKeys, Translations> = {
         substances: "No se permiten sustancias ilegales",
         damages: "Daños evaluados en el momento",
         children: "Adecuado para todas las edades",
-        return: "El paseo será reembolsado si se cancela a tiempo",
       },
       seo: {
         title: "¿Qué incluye cada paseo? | Boating Adventures Miami",
@@ -166,7 +165,7 @@ const translations: Record<LanguageKeys, Translations> = {
         prices: {
           label: "Precios:",
 
-          list: ["4h $450", "6h $600"]
+          list: ["4h $450", "5h $500", "6h $550"]
         }
       }
     },
@@ -287,7 +286,6 @@ const translations: Record<LanguageKeys, Translations> = {
         substances: "No illegal substances allowed",
         damages: "Damages evaluated on the spot",
         children: "Suitable for all ages",
-        return: "The trip will be refunded if canceled on time",
       },
       seo: {
         title: "What's included in your Miami boat tour | Boating Adventures",
@@ -360,7 +358,7 @@ const translations: Record<LanguageKeys, Translations> = {
         description: "Perfect for water sports and sandbar fun. Includes donut, kneeboard, music, and more.",
         prices: {
           label: "Prices:",
-          list: ["4h $450", "6h $600"]
+          list: ["4h $450", "5h $500", "6h $550"]
         }
       }
     },
@@ -479,8 +477,7 @@ const translations: Record<LanguageKeys, Translations> = {
         weather: "Remarcação por mau tempo",
         substances: "Substâncias ilegais não são permitidas",
         damages: "Danos avaliados na hora",
-        children: "Adequado para todas as idades",
-        return: "O passeio será reembolsado se for cancelado com antecedência"
+        children: "Adequado para todas as idades"
       },
       seo: {
         title: "O que está incluído no passeio de barco em Miami | Boating Adventures",
@@ -553,7 +550,7 @@ const translations: Record<LanguageKeys, Translations> = {
         description: "Perfeito para esportes aquáticos e diversão no sandbar. Inclui boia, kneeboard, música e mais.",
         prices: {
           label: "Preços:",
-          list: ["4h $450", "6h $600"]
+          list: ["4h $450", "5h $500", "6h $550"]
         }
       }
     },

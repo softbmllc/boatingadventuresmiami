@@ -6,6 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* === Boating Adventures: design tokens (palette) === */
+:root{
+  --ba-navy: #0F2230;       /* primary navy from logo */
+  --ba-gold: #C9A33A;       /* gold accent adjusted for web */
+  --ba-gold-soft: #E9D9A8;  /* light gold for subtle rings/hover */
+  --ba-ink: #0B1721;        /* deep ink for text on light backgrounds */
+}
+
 /* 🟢 Scroll suave global */
 html {
   scroll-behavior: smooth;

@@ -62,13 +62,12 @@ export type SectionSEO = {
     note: string;
   };
   
-  export type Policies = {
+export type Policies = {
     weather: string;
     substances: string;
     damages: string;
     children: string;
-    return: string;
-  };
+};
   
 export type DetailsSection = {
   includesTitle: string;
