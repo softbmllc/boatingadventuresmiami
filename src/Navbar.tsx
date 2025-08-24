@@ -6,6 +6,17 @@ export default function Navbar() {
   const { language, setLanguage } = useLanguage();
   const t = translations[language].nav;
 
+  const handleLang = (lang: "es" | "en" | "pt") => {
+    console.log("SET LANG CLICK:", lang);
+    setLanguage(lang);
+    try {
+      localStorage.setItem("lang", lang);
+    } catch {}
+    document.documentElement.setAttribute("lang", lang);
+    // fuerza remonte completo para que todos los componentes tomen el idioma
+    window.location.reload();
+  };
+
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -63,26 +74,32 @@ export default function Navbar() {
           {/* LANGUAGES */}
           <div className="flex items-center justify-center space-x-2 border-t border-gray-200 pt-2 sm:border-t-0 sm:pt-0 sm:ml-4">
             <button
+              type="button"
               className={`px-2 py-1 rounded-full text-xs sm:text-sm ${
                 language === "es" ? "bg-blue-500 text-white" : "bg-gray-200"
               }`}
-              onClick={() => setLanguage("es")}
+              onClick={() => handleLang("es")}
+              aria-pressed={language === "es"}
             >
               🇪🇸 ES
             </button>
             <button
+              type="button"
               className={`px-2 py-1 rounded-full text-xs sm:text-sm ${
                 language === "en" ? "bg-blue-500 text-white" : "bg-gray-200"
               }`}
-              onClick={() => setLanguage("en")}
+              onClick={() => handleLang("en")}
+              aria-pressed={language === "en"}
             >
               🇺🇸 EN
             </button>
             <button
+              type="button"
               className={`px-2 py-1 rounded-full text-xs sm:text-sm ${
                 language === "pt" ? "bg-blue-500 text-white" : "bg-gray-200"
               }`}
-              onClick={() => setLanguage("pt")}
+              onClick={() => handleLang("pt")}
+              aria-pressed={language === "pt"}
             >
               🇧🇷 PT
             </button>

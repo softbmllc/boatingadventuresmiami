@@ -8,6 +8,12 @@ import HeroVideoLayer from "./Components/HeroVideoLayer";
 export default function BoatingHome() {
   const { language } = useLanguage();
   const t = translations[language]?.home;
+  const aria = {
+    es: { wa: "Abrir WhatsApp para reservar", ig: "Abrir Instagram Boating Adventures" },
+    en: { wa: "Open WhatsApp to book", ig: "Open Instagram Boating Adventures" },
+    pt: { wa: "Abrir WhatsApp para reservar", ig: "Abrir Instagram Boating Adventures" },
+  } as const;
+  const a11y = aria[language] ?? aria.es;
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
@@ -22,10 +28,10 @@ export default function BoatingHome() {
     <>
       <section
         id="home"
-        className="relative overflow-hidden bg-cover bg-center min-h-[72vh] md:min-h-[80vh] flex items-center justify-center text-center px-6 py-12 sm:py-20 max-[380px]:py-8"
+        className="relative overflow-hidden bg-cover bg-center bg-[#0b1721] h-[calc(100dvh-var(--header-h,64px))] md:h-[calc(100dvh-var(--header-h,80px))] flex items-center justify-center text-center px-6"
       >
         <HeroVideoLayer position="absolute" />
-        <div className="relative z-10 max-w-3xl space-y-5 pt-16 max-[380px]:pt-24">
+        <div className="relative z-10 max-w-3xl space-y-5">
           {/* LOGO CIRCULAR AJUSTADO */}
           <motion.img
             src="/logo-circular.png"
@@ -42,11 +48,11 @@ export default function BoatingHome() {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="text-white text-2xl sm:text-4xl md:text-5xl font-extrabold leading-tight md:leading-[1.1] tracking-tight drop-shadow-md mx-auto max-w-[700px] max-[380px]:text-xl max-[380px]:leading-snug max-[380px]:tracking-normal max-[380px]:px-2"
           >
-            {language === "es"
+            {t?.title ?? (language === "es"
               ? "Paseos en Bote por Miami"
               : language === "pt"
               ? "Passeios de Barco em Miami"
-              : "Boat Tours in Miami"}
+              : "Boat Tours in Miami")}
           </motion.h1>
 
           <motion.p
@@ -69,7 +75,7 @@ export default function BoatingHome() {
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 text-white font-semibold h-12 md:h-14 px-6 md:px-8 rounded-full text-base md:text-lg shadow-lg transition-all hover:shadow-xl active:translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ba-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent flex items-center gap-2"
-              aria-label="Abrir WhatsApp para reservar"
+              aria-label={a11y.wa}
             >
               <FaWhatsapp className="text-xl" />
               <span className="font-semibold">{t.button}</span>
@@ -80,7 +86,7 @@ export default function BoatingHome() {
               target="_blank"
               rel="noopener noreferrer"
               className="bg-pink-500 hover:bg-pink-600 text-white font-semibold h-12 md:h-14 px-6 md:px-8 rounded-full text-base md:text-lg shadow-lg transition-all hover:shadow-xl active:translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ba-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent flex items-center gap-2"
-              aria-label="Abrir Instagram Boating Adventures"
+              aria-label={a11y.ig}
             >
               <FaInstagram className="text-xl" />
               <span className="font-semibold">Instagram</span>
@@ -89,7 +95,8 @@ export default function BoatingHome() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6 py-16">
+      <section className="-mt-[2px] bg-[#0c1d2c] w-full">
+        <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="flex flex-col sm:flex-row gap-6 justify-center flex-wrap">
           {[
             "/videos/Video1.mov",
@@ -111,6 +118,7 @@ export default function BoatingHome() {
               />
             </div>
           ))}
+        </div>
         </div>
       </section>
     </>

@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { Globe, Instagram, Menu, X } from "lucide-react";
 import ReactDOM from "react-dom";
+import { useLanguage } from "../LanguageContext";
+import translations from "../translations";
 
 export default function HeaderNav() {
-  const [language, setLanguage] = useState("es");
+  const { language, setLanguage } = useLanguage();
+  const t = translations[language].nav;
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [elevated, setElevated] = useState(false);
@@ -29,19 +32,19 @@ export default function HeaderNav() {
     };
   }, [open]);
 
-  const handleLanguageChange = (lang: string) => {
+  const handleLanguageChange = (lang: "es" | "en" | "pt") => {
     setLanguage(lang);
     setLangOpen(false);
   };
 
   const navItems = [
-    { href: "#home", label: "Inicio" },
-    { href: "#tours", label: "Experiencias" },
-    { href: "#boats", label: "Nuestros Botes" },
-    { href: "#gallery", label: "Galería" },
-    { href: "#services", label: "Servicios" },
-    { href: "#contact", label: "Contacto" },
-    { href: "#faq", label: "FAQ" },
+    { href: "#home", label: t.home },
+    { href: "#tours", label: t.tours },
+    { href: "#boats", label: t.boats },
+    { href: "#gallery", label: t.gallery },
+    { href: "#services", label: "Services" },
+    { href: "#contact", label: t.contact },
+    { href: "#faq", label: t.faq },
   ];
 
   return (
@@ -117,7 +120,7 @@ export default function HeaderNav() {
                   ].map((opt) => (
                     <button
                       key={opt.code}
-                      onClick={() => handleLanguageChange(opt.code)}
+                      onClick={() => handleLanguageChange(opt.code as "es" | "en" | "pt")}
                       className="w-full px-3 py-2 text-left hover:bg-white/10"
                       role="option"
                       aria-selected={language === opt.code}

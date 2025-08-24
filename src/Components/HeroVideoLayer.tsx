@@ -1,5 +1,3 @@
-
-
 import * as React from "react";
 
 /**
@@ -30,7 +28,6 @@ const HeroVideoLayer: React.FC<HeroVideoLayerProps> = ({
   src,
   srcDesktop = "/videos/bg-hero-v4.mp4",
   srcMobile = "/videos/bg-hero-mobile.mp4",
-  heightClass = "h-[72vh] md:h-[80vh]",
   poster,
   posterDesktop = "/images/hero-poster.jpg",
   posterMobile = "/images/hero-poster-mobile.jpg",
@@ -53,6 +50,7 @@ const HeroVideoLayer: React.FC<HeroVideoLayerProps> = ({
     }
   }, [mobileBreakpoint]);
 
+  // Restaurar lógica desktop/mobile para elegir fuente
   const effectiveSrc = src ?? (isMobile ? srcMobile : srcDesktop);
   const effectivePoster = poster ?? (isMobile ? posterMobile : posterDesktop);
 
@@ -60,14 +58,14 @@ const HeroVideoLayer: React.FC<HeroVideoLayerProps> = ({
     <div
       aria-hidden
       className={[
-        "pointer-events-none inset-x-0 top-0 z-0 overflow-hidden",
         position === "fixed" ? "fixed" : "absolute",
-        heightClass,
+        "inset-0 z-0 pointer-events-none overflow-hidden h-full",
       ].join(" ")}
     >
       {/* Video de fondo */}
       <video
-        className="min-w-full min-h-full w-auto h-auto object-cover"
+        key={effectiveSrc}
+        className="absolute inset-0 w-full h-full object-cover"
         src={effectiveSrc}
         autoPlay
         muted

@@ -25,13 +25,13 @@ const translations: Record<LanguageKeys, Translations> = {
       faq: "FAQ",
     },
     home: {
-      title: "Explorá Miami desde el agua como nunca antes",
+      title: "Paseos en Bote por Miami",
       subtitle:
         "Disfrutá de Miami desde el agua con paseos privados, deportes acuáticos y puestas de sol en entornos únicos.",
       button: "Reservar",
     },
     hero: {
-      title: "Explorá Miami desde el agua como nunca antes",
+      title: "Paseos en Bote por Miami",
       subtitle:
         "Alquiler de botes privados para grupos. Atardeceres, deportes acuáticos y experiencias únicas en el Sandbar.",
       button: "Reservar",
@@ -234,13 +234,13 @@ const translations: Record<LanguageKeys, Translations> = {
       faq: "FAQ",
     },
     home: {
-      title: "Explore Miami from the water like never before",
+      title: "Boat tours in Miami",
       subtitle: "Enjoy Miami from the water with private boat rides, water sports, and sunsets in unique surroundings.",
       button: "Book Now",
 
     },
     hero: {
-      title: "Explore Miami from the water like never before",
+      title: "Boat tours in Miami",
       subtitle:
         "Private boat rentals for groups. Sunsets, water sports, and unique experiences at the Sandbar.",
       button: "Book Now",
@@ -428,12 +428,12 @@ const translations: Record<LanguageKeys, Translations> = {
       faq: "FAQ"
     },
     home: {
-      title: "Explore Miami pelas águas como nunca antes",
+      title: "Passeios de barco em Miami",
       subtitle: "Aproveite Miami desde a água com passeios privados, esportes aquáticos e pores do sol em cenários únicos.",
       button: "Reservar"
     },
     hero: {
-      title: "Explore Miami da água como nunca antes",
+      title: "Passeios de barco em Miami",
       subtitle: "Aluguel de barcos privados para grupos. Pôr do sol, esportes aquáticos e experiências únicas no Sandbar.",
       button: "Reservar"
     },
